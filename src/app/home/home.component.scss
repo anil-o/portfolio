@@ -1,5 +1,35 @@
 .home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    background-color: #141D2F;
-    height: 700px;
+    height: 100vh;
+}
+
+.description-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.text-rotation {
+    font-weight: 400;
+    font-size: 100px;
+    transform: rotate(-90deg);
+    transform-origin: 33% 37%;
+}
+
+.name-and-jobdescription {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 128px;
+}
+
+.jobdescription {
+    font-weight: 400;
+    font-size: 64px;
+    color: #4B47FF;
 }
