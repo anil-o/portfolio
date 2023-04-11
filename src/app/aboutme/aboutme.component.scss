@@ -37,12 +37,23 @@
 }
 
 .profile-pic-container {
+    position: relative;;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 400px;
-    img {
-        width: 500px;
-        height: 500px;
-    }
+}
+
+.profile-pic {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+}
+
+.blueandgreen {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    z-index: -800;
+    top: 10%;
 }
