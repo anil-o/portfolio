@@ -1,0 +1,48 @@
+.aboutme-container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.aboutme {
+    font-weight: 700;
+    font-size: 90px;
+    margin-bottom: 35px;
+}
+
+.aboutme-description {
+    margin-bottom: 35px;
+    width: 600px;
+    text-align: justify;
+}
+
+.icon-and-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    margin-left: 35px;
+    width: 570px;
+    text-align: justify;
+
+}
+
+.mr-bulb {
+    margin-right: 42px;
+}
+
+.mr-puzzle {
+    margin-right: 30px;
+}
+
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 400px;
+    img {
+        width: 500px;
+        height: 500px;
+    }
+}
