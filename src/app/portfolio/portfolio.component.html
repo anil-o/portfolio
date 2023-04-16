@@ -1,0 +1,32 @@
+<div class="portfolio-container">
+
+    <div class="title-container">
+        <div class="line"></div>
+        <div class="title">Portfolio</div>
+    </div>
+
+    <div class="description">The page is a sample of my work scroll down to view other projects I have developed</div>
+    <div class="projects-container">
+        <ng-container *ngFor="let project of projects">
+            <div class="project" (mouseover)="onOverlayTrue()" (mouseout)="onOverlayFalse()">
+                <div class="img-project">
+                    <img class="picture" src="assets/img/projects/el-pollo-loco.png">
+                </div>
+                <div [ngClass]="{'d-none': !onOverlay}">
+                    <div class="linkbox-overlay">
+                        <a class="github-overlay">Github</a>
+                        <a class="live-test-overlay">Live test</a>
+                    </div>
+
+                    <div class="overlay-whitebox">
+                        <p>El Pollo Loco</p>
+                        <div class="description-overlay">Jump, run and throw game based on object-oriented approach.
+                            Help Pepe to find coins and tabasco
+                            salsa to fight against the crazy hen</div>
+                        <div class="language-overlay">JavaScript | HTML | CSS</div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
