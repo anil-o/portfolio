@@ -24,10 +24,16 @@ export class PortfolioComponent implements OnInit {
   }
 
   onOverlayTrue() {
-    this.onOverlay = true;
+    if (!this.onOverlay) {
+      this.onOverlay = true;
+      console.log('Function onOverlayTrue calling', this.onOverlay);
+    }
   }
 
   onOverlayFalse() {
-    this.onOverlay = false;
+    if (this.onOverlay) {
+      this.onOverlay = false;
+      console.log('Function onOverlayTrue calling', this.onOverlay);
+    }
   }
 }

@@ -47,6 +47,32 @@
     cursor: pointer;
 }
 
+.overlay-image-container {
+    width: 100%;
+    border-radius: 10%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    img {
+        object-fit: contain;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+.overlay-bg-color {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 600px;
+    width: 600px;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
 .d-none {
     display: none;
 }
@@ -60,7 +86,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 350px;
+    height: 360px;
     width: 100%;
     background-color: white;
     border-radius: 30px 30px 0px 0px;
