@@ -31,14 +31,25 @@
 
 .mr-bulb {
     margin-right: 42px;
+
+    &:hover {
+        scale: 1.2;
+    }
 }
 
 .mr-puzzle {
     margin-right: 30px;
+
+    &:hover {
+        transition: all 100ms linear;
+        transform: scale(1.2);
+        translate: -10%;
+    }
 }
 
 .profile-pic-container {
-    position: relative;;
+    position: relative;
+    ;
     display: flex;
     justify-content: center;
     align-items: center;
