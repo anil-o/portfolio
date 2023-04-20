@@ -8,14 +8,14 @@
     <div class="description">The page is a sample of my work scroll down to view other projects I have developed</div>
     <div class="projects-container">
         <ng-container *ngFor="let project of projects">
-            <div class="project" (mouseover)="onOverlayTrue()" (mouseleave)="onOverlayFalse()">
+            <div id="project" class="project" (mouseover)="onOverlayTrue()" (mouseleave)="onOverlayFalse()">
                 <div *ngIf="!onOverlay" class="first-picture"><img src="assets/img/projects/el-pollo-loco.png"></div>
-                <div class="overlay-image-container"><img src="assets/img/projects/el-pollo-loco-bg.png" *ngIf="onOverlay"></div>
+                <div *ngIf="onOverlay" id="overlayImg" class="overlay-image-container"><img src="assets/img/projects/el-pollo-loco-bg.png"></div>
                 <div *ngIf="onOverlay" class="overlay-bg-color"></div>
                 <div [ngClass]="{'d-none': !onOverlay}">
                     <div class="linkbox-overlay">
-                        <a class="github-overlay">Github</a>
-                        <a class="live-test-overlay">Live test</a>
+                        <a class="github-overlay" href="https://github.com/anil-o/elPolloLoco" target="_blank">Github</a>
+                        <a class="live-test-overlay" href="http://anil-orhan.developerakademie.net/el_pollo_loco/index.html" target="_blank">Live test</a>
                     </div>
 
                     <div class="overlay-whitebox">
