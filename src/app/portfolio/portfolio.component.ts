@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
+  constructor() { }
+
   projects = [
     {
       image: 'assets/img/projects/el-pollo-loco.png',
@@ -33,17 +35,17 @@ export class PortfolioComponent implements OnInit {
 
   }
 
-  onOverlayTrue(index: number) {
+  onOverlayTrue(index) {
     if (!this.projects[index].isHovered) {
       this.projects[index].isHovered = true;
-      console.log('on box: Should be true', this.projects[index].isHovered);
+      console.log('on box:', this.projects[index].isHovered);
     }
   }
 
-  onOverlayFalse(index: number) {
+  onOverlayFalse(index) {
     if (this.projects[index].isHovered) {
       this.projects[index].isHovered = false;
-      console.log('onleave box: Should be false', this.projects[index].isHovered);
+      console.log('onleave box:', this.projects[index].isHovered);
     }
   }
 }

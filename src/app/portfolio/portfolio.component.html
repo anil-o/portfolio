@@ -8,9 +8,9 @@
     <div class="description">The page is a sample of my work scroll down to view other projects I have developed</div>
     <div class="projects-container">
         <ng-container *ngFor="let project of projects; index as i">
-            <div class="project" (mouseover)="onOverlayTrue(i)" (mouseleave)="onOverlayFalse(i)">
+            <div class="project" (mouseover)="onOverlayTrue(i)" (mouseout)="onOverlayFalse(i)">
                 <div *ngIf="!project.isHovered"><img src="{{ project.image }}"></div>
-                <div *ngIf="project.isHovered" id="overlayImg" class="overlay-image-container"><img src="{{ project.imageByZoom }}"></div>
+                <div *ngIf="project.isHovered" class="overlay-image-container"><img src="{{ project.imageByZoom }}"></div>
                 <div *ngIf="project.isHovered" class="overlay-bg-color"></div>
                 <div [ngClass]="{'d-none': !project.isHovered}">
                     <div class="linkbox-overlay">
