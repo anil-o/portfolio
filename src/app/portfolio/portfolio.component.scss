@@ -30,17 +30,20 @@
 
 .projects-container {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 112px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .project {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     position: relative;
-    height: 600px;
-    width: 600px;
+    height: 650px;
+    width: 650px;
     border-radius: 30px 30px 30px 30px;
     border: 1px solid #1CDAE6;
     margin-bottom: 35px;
@@ -98,7 +101,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 360px;
+    height: 380px;
     width: 100%;
     background-color: white;
     border-radius: 30px 30px 30px 30px;

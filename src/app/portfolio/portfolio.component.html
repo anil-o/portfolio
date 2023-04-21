@@ -7,23 +7,21 @@
 
     <div class="description">The page is a sample of my work scroll down to view other projects I have developed</div>
     <div class="projects-container">
-        <ng-container *ngFor="let project of projects">
-            <div id="project" class="project" (mouseover)="onOverlayTrue()" (mouseleave)="onOverlayFalse()">
-                <div *ngIf="!onOverlay" class="first-picture"><img src="assets/img/projects/el-pollo-loco.png"></div>
-                <div *ngIf="onOverlay" id="overlayImg" class="overlay-image-container"><img src="assets/img/projects/el-pollo-loco-bg.png"></div>
-                <div *ngIf="onOverlay" class="overlay-bg-color"></div>
-                <div [ngClass]="{'d-none': !onOverlay}">
+        <ng-container *ngFor="let project of projects; index as i">
+            <div class="project" (mouseover)="onOverlayTrue(i)" (mouseleave)="onOverlayFalse(i)">
+                <div *ngIf="!project.isHovered"><img src="{{ project.image }}"></div>
+                <div *ngIf="project.isHovered" id="overlayImg" class="overlay-image-container"><img src="{{ project.imageByZoom }}"></div>
+                <div *ngIf="project.isHovered" class="overlay-bg-color"></div>
+                <div [ngClass]="{'d-none': !project.isHovered}">
                     <div class="linkbox-overlay">
-                        <a class="github-overlay" href="https://github.com/anil-o/elPolloLoco" target="_blank">Github</a>
-                        <a class="live-test-overlay" href="http://anil-orhan.developerakademie.net/el_pollo_loco/index.html" target="_blank">Live test</a>
+                        <a class="github-overlay" href="{{ project.github }}" target="_blank">Github</a>
+                        <a class="live-test-overlay" href="{{ project.link }}" target="_blank">Live test</a>
                     </div>
 
                     <div class="overlay-whitebox">
-                        <p>El Pollo Loco</p>
-                        <div class="description-overlay">Jump, run and throw game based on object-oriented approach.
-                            Help Pepe to find coins and tabasco
-                            salsa to fight against the crazy hen</div>
-                        <div class="language-overlay">JavaScript | HTML | CSS</div>
+                        <p>{{ project.title }}</p>
+                        <div class="description-overlay">{{ project.description }}</div>
+                        <div class="language-overlay">{{ project.type}}</div>
                     </div>
                 </div>
             </div>
