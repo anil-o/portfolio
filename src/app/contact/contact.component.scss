@@ -1,0 +1,105 @@
+.contact-container {
+    margin-top: 145px;
+    color: white;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 85px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 90px;
+    color: white;
+    margin-right: 28px;
+}
+
+.line {
+    width: 504px;
+    height: 0px;
+    border: 4px solid #00BEE8;
+}
+
+.getincontact-container {
+    display: flex;
+    gap: 100px;
+}
+
+.getincontact-left-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.getincontact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.line-getincontact {
+    width: 50px;
+    height: 0px;
+    border: 4px solid #1CE6B6;
+    margin-right: 48px;
+}
+
+.text-getincontact {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.first-subtext {
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-left: 105px;
+}
+
+.second-subtext {
+    font-weight: 700;
+    margin-left: 105px;
+}
+
+.contactme {
+    font-weight: 800;
+}
+
+.getincontact-right-container {
+    width: 50%;
+    margin-right: 100px;
+
+    input, textarea {
+        display: flex;
+        align-items: center;
+        padding: 15px 25px;
+        gap: 10px;
+        width: 700px;
+        height: 25px;
+        border: 1px solid #4B47FF;
+        border-radius: 10px;
+        background-color: #141D2F;
+        color: white;
+        outline: none;
+        margin-bottom: 35px;
+
+        &::placeholder {
+            font-weight: 400;
+            color: white;
+        }
+
+        &:focus::placeholder {
+            color: transparent;
+        }
+
+        textarea {
+            height: 200px !important;
+        }
+    }
+}
+
+.textarea-box {
+    height: 200px !important;
+}
