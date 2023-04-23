@@ -14,7 +14,7 @@ export class PortfolioComponent implements OnInit {
       image: 'assets/img/projects/el-pollo-loco.png',
       imageByZoom: 'assets/img/projects/el-pollo-loco-bg.png',
       title: 'El Pollo Loco',
-      description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen',
+      description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       type: 'JavaScript | HTML | CSS',
       link: 'http://anil-orhan.developerakademie.net/el_pollo_loco/index.html',
       github: 'https://github.com/anil-o/elPolloLoco',
@@ -35,17 +35,13 @@ export class PortfolioComponent implements OnInit {
 
   }
 
-  onOverlayTrue(index) {
-    if (!this.projects[index].isHovered) {
-      this.projects[index].isHovered = true;
-      console.log('on box:', this.projects[index].isHovered);
-    }
+  hoveredTrue(index) {
+    this.projects[index].isHovered = true;
+    console.log('mouse over', this.projects[index].isHovered);
   }
 
-  onOverlayFalse(index) {
-    if (this.projects[index].isHovered) {
-      this.projects[index].isHovered = false;
-      console.log('onleave box:', this.projects[index].isHovered);
-    }
+  hoveredFalse(index) {
+    this.projects[index].isHovered = false;
+    console.log('mouse out', this.projects[index].isHovered);
   }
 }

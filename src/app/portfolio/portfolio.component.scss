@@ -16,38 +16,36 @@
 .title {
     font-weight: 700;
     font-size: 90px;
-    margin-left: 50px;
+    margin-left: 45px;
 }
 
 .description {
     width: 473px;
     height: 38px;
     margin-top: 35px;
-    margin-left: 112px;
+    margin-left: 110px;
     font-weight: 400;
     margin-bottom: 100px;
 }
 
-.projects-container {
+.project-container {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding-left: 100px;
+    gap: 70px;
 }
 
 .project {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
     position: relative;
-    height: 650px;
     width: 650px;
+    height: 650px;
     border-radius: 30px 30px 30px 30px;
     border: 1px solid #1CDAE6;
-    margin-bottom: 35px;
     cursor: pointer;
+
+    &:hover .wrapper-overlay {
+        display: flex;
+    }
 
     &:hover .overlay-image-container {
         animation: zoom-elements 125ms linear;
@@ -56,11 +54,27 @@
             0% {
                 scale: 0;
             }
+
             100% {
                 scale: 1;
             }
         }
     }
+}
+
+.start-img-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.img-project {
+    width: 100%;
+}
+
+.wrapper-overlay {
+    display: none;
+    flex-direction: column;
 }
 
 .overlay-image-container {
@@ -88,20 +102,58 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.d-none {
-    display: none;
+.link {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    display: flex;
 }
 
-.overlay-whitebox {
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    font-weight: 400;
+    font-size: 23px;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid #1CDAE6;
+    margin-right: 55px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #1CE6B6;
+    }
+}
+
+.livetest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    font-weight: 400;
+    font-size: 23px;
+    background-color: #4B47FF;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #00BEE8;
+    }
+}
+
+.whitebox {
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    bottom: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 380px;
+    height: 400px;
     width: 100%;
     background-color: white;
     border-radius: 30px 30px 30px 30px;
@@ -115,69 +167,15 @@
     }
 }
 
-.linkbox-overlay {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 20%;
-    right: 20%;
-    top: 15%;
-    display: flex;
-
-    a {
-        text-decoration: none;
-    }
-}
-
-.github-overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 30px;
-    font-weight: 400;
-    font-size: 23px;
-    border-radius: 10px;
-    color: white;
-    border: 1px solid #1CDAE6;
-    margin-right: 55px;
-    cursor: pointer;
-
-    &:hover {
-        background-color: #1CE6B6;
-    }
-}
-
-.live-test-overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 30px;
-    font-weight: 400;
-    font-size: 23px;
-    background-color: #4B47FF;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
-
-    &:hover {
-        background-color: #00BEE8;
-    }
-}
-
-.overlay-whitebox {
-    position: absolute;
-}
-
 .description-overlay {
     font-weight: 400;
     font-size: 24px;
-    color: black;
     margin-bottom: 27px;
-    text-align: justify;
+    text-align: center;
+    color: black;
 }
 
-.language-overlay {
+.language {
     font-weight: 400;
     font-size: 24px;
     color: #00BEE8;
