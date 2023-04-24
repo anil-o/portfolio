@@ -1,5 +1,6 @@
 .contact-container {
     margin-top: 145px;
+    margin-bottom: 100px;
     color: white;
 }
 
@@ -71,7 +72,8 @@
     width: 50%;
     margin-right: 100px;
 
-    input, textarea {
+    input,
+    textarea {
         display: flex;
         align-items: center;
         padding: 15px 25px;
@@ -102,4 +104,62 @@
 
 .textarea-box {
     height: 200px !important;
+    resize: none;
+}
+
+.sendmessage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sendmessage {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    background: #00BEE8;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 35px;
+
+    &:hover {
+        background-color: #4B47FF;
+        padding: 20px 35px;
+    }
+}
+
+.circle-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid #00BEE8;
+    }
+}
+
+.arrow {
+    width: 15px;
+    height: 15px;
+    fill: white;
+
+    &:hover {
+        fill: #00BEE8;
+    }
 }
