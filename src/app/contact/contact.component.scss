@@ -95,6 +95,7 @@
         color: white;
         outline: none;
         margin-bottom: 35px;
+        cursor: pointer;
 
         &::placeholder {
             font-weight: 400;
@@ -107,6 +108,10 @@
 
         textarea {
             height: 200px !important;
+        }
+
+        &:hover {
+            border: 1px solid #1CE6B6;
         }
     }
 }
