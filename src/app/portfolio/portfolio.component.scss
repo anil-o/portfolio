@@ -1,5 +1,18 @@
 .portfolio-container {
     color: white;
+    position: relative;
+}
+
+.shadow-green {
+    position: absolute;
+    right: 0;
+    top: -35%;
+}
+
+.shadow-lightblue {
+    position: absolute;
+    left: 0;
+    bottom: -30%;
 }
 
 .title-container {
@@ -42,6 +55,7 @@
     border-radius: 30px 30px 30px 30px;
     border: 1px solid #1CDAE6;
     cursor: pointer;
+    background-color: #141D2F;
 
     &:hover .wrapper-overlay {
         display: flex;
