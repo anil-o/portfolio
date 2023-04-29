@@ -167,14 +167,13 @@
     &:hover {
         border: 1px solid #00BEE8;
     }
+
+    &:hover .arrow {
+        filter: brightness(0) saturate(100%) invert(57%) sepia(96%) saturate(2185%) hue-rotate(151deg) brightness(97%) contrast(103%);
+    }
 }
 
 .arrow {
     width: 15px;
     height: 15px;
-    fill: white;
-
-    &:hover {
-        fill: #00BEE8;
-    }
 }
