@@ -10,6 +10,18 @@
     justify-content: space-between;
 }
 
+.imprint {
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover {
+        display: inline-block;
+        text-decoration: underline;
+        text-decoration-color: #00BEE8;
+        text-decoration-thickness: 3px;
+    }
+}
+
 .name {
     font-size: 36px;
     font-weight: 600;
