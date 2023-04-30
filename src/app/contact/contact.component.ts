@@ -20,6 +20,7 @@ async sendMail() {
   let name = this.name.nativeElement;//get the id like in JS
   let email = this.email.nativeElement;
   let message = this.message.nativeElement;
+  let myForm = this.myForm.nativeElement;
   name.disabled = true;
   email.disabled = true;
   message.disabled = true;
@@ -37,14 +38,12 @@ async sendMail() {
   }
   );
 
-  this.emailsent(name, email, message);
+  this.emailsent(name, email, message, myForm);
 
 }
 
-emailsent(name, email, message) {
-  name.value = '';
-  email.value = '';
-  message.value = '';
+emailsent(name, email, message, myForm) {
+  myForm.reset();
   name.disabled = true;
   email.disabled = true;
   message.disabled = true;
