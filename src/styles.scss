@@ -6,9 +6,11 @@
 
   * {
     font-family: 'Poppins', sans-serif;
+    color: white;
   }
 
   html {
+    scroll-padding-top: 100px; 
     scroll-behavior: smooth;
   }
 
