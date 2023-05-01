@@ -9,18 +9,32 @@
     left: 0;
     right: 0;
     z-index: -1000;
+
+    @media (max-width: 450px) {
+        top: -107%;
+    }
 }
 
 .skills-container {
     color: white;
     height: 700px;
     margin-left: 100px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
+
+    @media (max-width: 450px) {
+        margin-left: 10px;
+        height: unset;
+    }
 }
 
 .skills-container-child {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 450px) {
+        flex-direction: column-reverse;
+        justify-content: unset;
+    }
 }
 
 .grid-container {
@@ -28,6 +42,11 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr fr;
     gap: 80px 100px;
+
+    @media (max-width: 450px) {
+        gap: unset;
+        margin-right: 10px;
+    }
 }
 
 .item-1 {
@@ -98,12 +117,22 @@
     margin-top: 200px;
     overflow-x: hidden;
     margin-left: 100px;
+
+    @media (max-width: 450px) {
+        margin-left: 10px;
+        margin-top: 100px;
+    }
 }
 
 .skill-title {
     font-weight: 700;
     font-size: 90px;
     margin-right: 42px;
+
+    @media (max-width: 450px) {
+        font-size: 45px;
+        margin-right: 30px;
+    }
 }
 
 .title-and-line {
@@ -123,6 +152,11 @@
     font-weight: 400;
     font-size: 16px;
     margin-right: 100px;
+
+    @media (max-width: 450px) {
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
 }
 
 .get-in-touch-btn {
@@ -169,5 +203,12 @@
 
     80% {
         transform: translateY(-10px);
+    }
+}
+
+/*Responsive*/
+@media (max-width: 450px) {
+    .hide-mobile {
+        display: none;
     }
 }

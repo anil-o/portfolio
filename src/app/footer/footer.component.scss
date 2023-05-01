@@ -2,12 +2,24 @@
     border-top: 4px solid #00BEE8;
     padding: 130px 110px;
     color: white;
+
+    @media (max-width: 450px) {
+        padding: 130px 35px;
+    }
+}
+
+.hide-mobile {
+    display: none;
 }
 
 .footer-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 450px) {
+        flex-direction: column;
+    }
 }
 
 .imprint {
@@ -54,6 +66,10 @@
         text-decoration: none;
         color: white;
     }
+
+    @media (max-width: 450px) {
+        margin-bottom: 30px;
+    }
 }
 
 .text {
@@ -64,6 +80,10 @@
         width: 15px;
         height: 15px;
         margin-right: 8px;
+    }
+
+    @media (max-width: 450px) {
+        margin-bottom: 30px;
     }
 }
 
@@ -76,5 +96,24 @@
         &:hover {
             transform: scale(1.4);
         }
+    }
+
+    @media (max-width: 450px) {
+        margin-bottom: 30px;
+    }
+}
+
+/*Responsive*/
+@media (max-width: 450px) {
+    .hide-mobile {
+        display: flex;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .mr-10 {
+        margin-right: 10px;
     }
 }

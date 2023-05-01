@@ -5,18 +5,35 @@
     margin-left: 100px;
     margin-bottom: 100px;
     margin-top: 20px;
+
+    @media (max-width: 450px) {
+        flex-direction: column-reverse;
+        justify-content: unset;
+        margin-left: 15px;
+        margin-bottom: unset;
+    }
 }
 
 .aboutme {
     font-weight: 700;
     font-size: 90px;
     margin-bottom: 35px;
+
+    @media (max-width: 450px) {
+        font-weight: 700;
+        font-size: 45px;
+        margin-top: 70px;
+    }
 }
 
 .aboutme-description {
     margin-bottom: 35px;
     width: 600px;
     text-align: justify;
+
+    @media (max-width: 450px) {
+        width: 100%;
+    }
 }
 
 .icon-and-text {
@@ -27,6 +44,10 @@
     width: 570px;
     text-align: justify;
 
+    @media (max-width: 450px) {
+        width: unset;
+        margin-left: unset;
+    }
 }
 
 .mr-bulb {
@@ -54,12 +75,22 @@
     align-items: center;
     margin-right: 400px;
     margin-left: 100px;
+
+    @media (max-width: 450px) {
+        margin-right: unset;
+        margin-left: 10px;
+    }
 }
 
 .profile-pic {
     width: 500px;
     height: 500px;
     object-fit: contain;
+
+    @media (max-width: 450px) {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 .blueandgreen {
@@ -68,4 +99,16 @@
     height: 500px;
     z-index: -800;
     top: 10%;
+
+    @media (max-width: 450px) {
+        width: 300px;
+        height: 250px;
+    }
+}
+
+/*Responsive*/
+@media (max-width: 450px) {
+    .aboutme-description-parent {
+        margin-right: 15px;
+    }
 }

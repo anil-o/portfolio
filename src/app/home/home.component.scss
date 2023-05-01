@@ -6,6 +6,7 @@
     color: white;
     height: 100vh;
     width: 100%;
+    max-width: 100%;
 }
 
 .description-container {
@@ -18,6 +19,10 @@
     font-size: 100px;
     transform: rotate(-90deg);
     transform-origin: 33% 37%;
+
+    @media (max-width: 450px) {
+        font-size: 28px;
+    }
 }
 
 .name-and-jobdescription {
@@ -28,6 +33,10 @@
 .name {
     font-weight: 700;
     font-size: 128px;
+
+    @media (max-width: 450px) {
+        font-size: 35px;
+    }
 }
 
 .jobdescription {
@@ -35,6 +44,11 @@
     font-size: 64px;
     color: #4B47FF;
     text-transform: uppercase;
+
+    @media (max-width: 450px) {
+        font-weight: 400;
+        font-size: 21px;
+    }
 }
 
 .img-blue {
@@ -44,6 +58,11 @@
     height: 700px;
     width: 550px;
     z-index: -100;
+
+    @media (max-width: 450px) {
+        height: 450px;
+        width: 150px;
+    }
 }
 
 .img-green {
@@ -53,6 +72,12 @@
     width: 400px;
     height: 800px;
     z-index: -100;
+
+    @media (max-width: 450px) {
+        height: 350px;
+        width: 150px;
+        top: 40%;
+    }
 }
 
 .btn-container {
@@ -138,5 +163,12 @@
 
     &:hover {
         transform: scale(1.4);
+    }
+}
+
+/*Responsive*/
+@media (max-width: 450px) {
+    .hide-mobile {
+        display: none;
     }
 }

@@ -34,3 +34,33 @@
     text-decoration: underline;
     text-decoration-color: #1CDAE6;
 }
+
+/*Responsive*/
+@media (max-width: 450px) {
+    .hide-mobile {
+        display: none;
+    }
+
+    .navigation-bar-mobile {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .name-mobile {
+       margin-left: 10px;
+        font-size: 28px;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+
+    .menu-mobile {
+        margin-top: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(65%) saturate(0%) hue-rotate(63deg) brightness(111%) contrast(101%);
+    }
+}
