@@ -178,6 +178,10 @@
         background-color: #4B47FF;
         padding: 20px 35px;
     }
+
+    @media (max-width: 450px) {
+        top: 100%;
+    }
 }
 
 .bounce-animation {
@@ -208,7 +212,9 @@
 
 /*Responsive*/
 @media (max-width: 450px) {
-    .hide-mobile {
-        display: none;
+    .mobile-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

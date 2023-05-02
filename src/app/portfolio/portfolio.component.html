@@ -16,8 +16,7 @@
             </div>
 
             <div class="wrapper-overlay">
-                <div class="overlay-image-container"><img src="{{ project.imageByZoom }}">
-                </div>
+                <div class="overlay-image-container"><img src="{{ project.imageByZoom }}"></div>
                 <div class="overlay-bg-color"></div>
 
                 <div class="link">
@@ -33,34 +32,4 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-    <!-- <div class="projects-container">
-        <ng-container *ngFor="let project of projects; index as i">
-            <div class="project">
-                <div *ngIf="!project.isHovered"><img src="{{ project.image }}"></div>
-                <div *ngIf="project.isHovered" class="overlay-image-container"><img src="{{ project.imageByZoom }}"></div>
-                <div *ngIf="project.isHovered" class="overlay-bg-color"></div>
-                <div *ngIf="project.isHovered">
-                    <div class="linkbox-overlay">
-                        <a class="github-overlay" href="{{ project.github }}" target="_blank">Github</a>
-                        <a class="live-test-overlay" href="{{ project.link }}" target="_blank">Live test</a>
-                    </div>
-
-                    <div class="overlay-whitebox">
-                        <p>{{ project.title }}</p>
-                        <div class="description-overlay">{{ project.description }}</div>
-                        <div class="language-overlay">{{ project.type}}</div>
-                    </div>
-                </div>
-            </div>
-        </ng-container>
-    </div> -->
 </div>
