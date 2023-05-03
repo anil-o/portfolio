@@ -1,4 +1,28 @@
 <div class="header-container">
-    <app-navigation></app-navigation>
-</div>
+    <div class="navigation-bar">
+        <div class="name-container">
+            <a class="hide" href="#home"><span style="color: #9747FF;">A</span>n<span
+                    style="color: #1CDAE6;">i</span>l</a>
+            <div class="name-mobile hide-mobile"><a href="#home"><span style="color: #9747FF;">A</span>n<span
+                        style="color: #1CDAE6;">i</span>l</a></div>
+        </div>
 
+        <div class="menu-container">
+            <a class="mr-32 hide" href="#aboutme">About me</a>
+            <a class="mr-32 hide" href="#skills">Skills</a>
+            <a class="hide" href="#portfolio">Portfolio</a>
+            <div (click)="toggleMenuClose()" *ngIf="!isMenuOpen" class="menu-mobile hide-mobile"><img
+                    src="assets/img/mobile_menu.png"></div>
+            <div (click)="toggleMenuOpen()" *ngIf="isMenuOpen" class="menu-mobile hide-mobile"><img src="assets/img/close.png">
+            </div>
+        </div>
+    </div>
+    <div *ngIf="isMenuOpen" class="header-container-mobile">
+        <div class="link-container-mobile">
+            <div (click)="toggleMenuOpen()" class="link-mobile"><a href="#aboutme">About me</a></div>
+            <div (click)="toggleMenuOpen()" class="link-mobile"><a href="#skills">Skills</a></div>
+            <div (click)="toggleMenuOpen()" class="link-mobile"><a href="#portfolio">Portfolio</a></div>
+            <div (click)="toggleMenuOpen()" class="link-mobile"><a href="#contact">Contact</a></div>
+        </div>
+    </div>
+</div>

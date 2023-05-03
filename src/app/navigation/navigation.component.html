@@ -1,16 +1,15 @@
-<div class="navigation-bar hide-mobile">
+<div class="navigation-bar">
     <div class="name-container">
-        <a href="#home"><span style="color: #9747FF;">A</span>n<span style="color: #1CDAE6;">i</span>l</a>
+        <a class="hide" href="#home"><span style="color: #9747FF;">A</span>n<span style="color: #1CDAE6;">i</span>l</a>
+        <div class="name-mobile hide-mobile"><a href="#home"><span style="color: #9747FF;">A</span>n<span
+                    style="color: #1CDAE6;">i</span>l</a></div>
     </div>
 
     <div class="menu-container">
-        <a class="mr-32" href="#aboutme">About me</a>
-        <a class="mr-32" href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
+        <a class="mr-32 hide" href="#aboutme">About me</a>
+        <a class="mr-32 hide" href="#skills">Skills</a>
+        <a class="hide" href="#portfolio">Portfolio</a>
+        <div (click)="toggleMenu()" *ngIf="!isMenuOpen" class="menu-mobile hide-mobile"><img src="assets/img/mobile_menu.png"></div>
+        <div (click)="toggleMenu()" *ngIf="isMenuOpen" class="menu-mobile hide-mobile"><img src="assets/img/close.png"></div>
     </div>
-</div>
-
-<div class="navigation-bar-mobile">
-    <div class="name-mobile"><a href="#home"><span style="color: #9747FF;">A</span>n<span style="color: #1CDAE6;">i</span>l</a></div>
-    <div class="menu-mobile"><img src="assets/img/mobile_menu.png"></div>
 </div>

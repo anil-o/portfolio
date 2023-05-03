@@ -4,6 +4,14 @@
     align-items: center;
     padding: 32px 100px;
     color: white;
+
+    @media (max-width: 450px) {
+        padding: 37px 25px;
+    }
+}
+
+.hide-mobile {
+    display: none;
 }
 
 .name-container {
@@ -37,17 +45,17 @@
 
 /*Responsive*/
 @media (max-width: 450px) {
-    .hide-mobile {
+    .hide {
         display: none;
     }
 
-    .navigation-bar-mobile {
+    .hide-mobile {
+        display: unset;
+    }
+
+    .mobile-menu {
         display: flex;
         justify-content: space-between;
-
-        a {
-            text-decoration: none;
-        }
     }
 
     .name-mobile {
