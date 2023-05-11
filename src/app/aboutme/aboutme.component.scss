@@ -12,6 +12,25 @@
         margin-left: 15px;
         margin-bottom: unset;
     }
+
+    @media (min-width: 451px) and (max-width: 650px) {
+        flex-direction: column-reverse;
+        justify-content: unset;
+        margin-left: 15px;
+        margin-bottom: unset;
+    }
+
+    @media (min-width: 651px) and (max-width: 1000px) {
+        flex-direction: column-reverse;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px) {
+        flex-direction: column-reverse;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
 
 .aboutme {
@@ -24,6 +43,24 @@
         font-size: 45px;
         margin-top: 70px;
     }
+
+    @media (min-width: 451px) and (max-width: 650px) {
+        font-weight: 700;
+        font-size: 45px;
+        margin-top: 70px;
+    }
+
+    @media (min-width: 651px) and (max-width: 1000px) {
+        font-weight: 700;
+        font-size: 70px;
+        margin-top: 70px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px) {
+        font-weight: 700;
+        font-size: 70px;
+        margin-top: 70px;
+    }
 }
 
 .aboutme-description {
@@ -32,6 +69,18 @@
     text-align: justify;
 
     @media (max-width: 450px) {
+        width: 100%;
+    }
+
+    @media (min-width: 451px) and (max-width: 650px) {
+        width: 100%;
+    }
+
+    @media (min-width: 651px) and (max-width: 1000px) {
+        width: 100%;
+    }
+    
+    @media (min-width: 1001px) and (max-width: 1350px) {
         width: 100%;
     }
 }
@@ -45,6 +94,21 @@
     text-align: justify;
 
     @media (max-width: 450px) {
+        width: unset;
+        margin-left: unset;
+    }
+
+    @media (min-width: 451px) and (max-width: 650px) {
+        width: unset;
+        margin-left: unset;
+    }
+
+    @media (min-width: 651px) and (max-width: 1000px) {
+        width: unset;
+        margin-left: unset;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px) {
         width: unset;
         margin-left: unset;
     }
@@ -80,6 +144,21 @@
         margin-right: unset;
         margin-left: 10px;
     }
+
+    @media (min-width: 451px) and (max-width: 650px) {
+        margin-right: unset;
+        margin-left: 10px;
+    }
+
+    @media (min-width: 651px) and (max-width: 1000px) {
+        margin-right: unset;
+        margin-left: 10px;
+    }   
+    
+    @media (min-width: 1001px) and (max-width: 1350px) {
+        margin-right: unset;
+        margin-left: 10px;
+    }
 }
 
 .profile-pic {
@@ -89,7 +168,17 @@
 
     @media (max-width: 450px) {
         width: 300px;
-        height: 300px;
+        height: 445px;
+    }
+
+    @media (min-width: 451px) and (max-width: 650px) {
+        width: 300px;
+        height: 390px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px) {
+        width: 600px;
+        height: 600px;
     }
 }
 
@@ -104,10 +193,29 @@
         width: 300px;
         height: 250px;
     }
+
+    @media (min-width: 451px) and (max-width: 650px) {
+        width: 350px;
+        height: 345px;
+    }
+
+    @media (min-width: 651px) and (max-width: 1000px) {
+        width: 620px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px) {
+        width: 620px;
+    }
 }
 
 /*Responsive*/
 @media (max-width: 450px) {
+    .aboutme-description-parent {
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 650px) {
     .aboutme-description-parent {
         margin-right: 15px;
     }

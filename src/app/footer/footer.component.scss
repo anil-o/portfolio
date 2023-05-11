@@ -20,13 +20,21 @@
     @media (max-width: 450px) {
         flex-direction: column;
     }
+
+    @media (min-width: 451px) and (max-width: 650px) {
+        flex-direction: column;
+    }
+
+    @media (min-width: 651px) and (max-width: 1250px) {
+        flex-direction: column;
+    }
 }
 
 .imprint {
     font-weight: 400;
     cursor: pointer;
     margin-top: 8px;
-    
+
     a {
         text-decoration: none;
         color: white;
@@ -70,6 +78,14 @@
     @media (max-width: 450px) {
         margin-bottom: 30px;
     }
+
+    @media (min-width: 451px) and (max-width: 650px) {
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: 651px) and (max-width: 1250px) {
+        margin-bottom: 20px;
+    }
 }
 
 .text {
@@ -83,6 +99,14 @@
     }
 
     @media (max-width: 450px) {
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: 451px) and (max-width: 650px) {
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: 651px) and (max-width: 1250px) {
         margin-bottom: 30px;
     }
 }
@@ -101,10 +125,46 @@
     @media (max-width: 450px) {
         margin-bottom: 30px;
     }
+
+    @media (min-width: 451px) and (max-width: 650px) {
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: 651px) and (max-width: 1250px) {
+        margin-bottom: 30px;
+    }
 }
 
 /*Responsive*/
 @media (max-width: 450px) {
+    .hide-mobile {
+        display: flex;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .mr-10 {
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 650px) {
+    .hide-mobile {
+        display: flex;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .mr-10 {
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 1250px) {
     .hide-mobile {
         display: flex;
     }

@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
@@ -16,12 +15,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NavigationComponent,
     HomeComponent,
     LandingpageComponent,
     AboutmeComponent,
@@ -36,7 +35,8 @@ import { ImprintComponent } from './imprint/imprint.component';
     BrowserModule,
     AppRoutingModule, 
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
