@@ -213,8 +213,8 @@
     }
 
     @media (min-width: 1001px) and (max-width: 1350px) {
-        width: 500px;
-        height: 500px;
+        width: 400px;
+        height: 400px;
     }
 }
 
@@ -312,6 +312,12 @@
         font-size: 18px;
         padding: 10px 10px;
     }
+
+    @media (min-width: 1001px) and (max-width: 1350px) {
+        font-weight: 400;
+        font-size: 16px;
+        padding: 15px 15px;
+    }
 }
 
 .livetest {
@@ -342,6 +348,12 @@
         font-size: 18px;
         padding: 15px 15px;
     }
+
+    @media (min-width: 1001px) and (max-width: 1350px) {
+        font-weight: 400;
+        font-size: 16px;
+        padding: 15px 15px;
+    }
 }
 
 .whitebox {
@@ -351,7 +363,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 400px;
+    height: 380px;
     width: 100%;
     background-color: white;
     border-radius: 30px 30px 30px 30px;
@@ -362,15 +374,20 @@
         font-weight: 700;
         font-size: 32px;
         color: #4B47FF;
+
+        @media (min-width: 1001px) and (max-width: 1350px) {
+            font-weight: 700;
+            font-size: 24px;
+        }
     }
 
     @media (min-width: 651px) and (max-width: 1000px) {
         height: 280px;
-    }  
+    }
 
     @media (min-width: 1001px) and (max-width: 1350px) {
-        height: 280px;
-    }   
+        height: 230px;
+    }
 }
 
 .description-overlay {
@@ -379,7 +396,6 @@
     margin-bottom: 27px;
     text-align: center;
     color: black;
-
 
     @media (max-width: 450px) {
         font-weight: 400;
@@ -391,6 +407,12 @@
         font-weight: 400;
         font-size: 16px;
         margin-bottom: 15px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px) {
+        font-weight: 400;
+        font-size: 16px;
+        padding: 8px 8px;
     }
 }
 
@@ -406,7 +428,12 @@
 
     @media (min-width: 451px) and (max-width: 650px) {
         font-weight: 400;
-        font-size: 14px;;
+        font-size: 14px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px) {
+        font-weight: 400;
+        font-size: 16px;
     }
 }
 

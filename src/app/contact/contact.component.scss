@@ -77,12 +77,6 @@
         width: 100%;
         gap: 100px;
     }
-
-    @media (min-width: 1001px) and (max-width: 1350px) {
-        flex-direction: column;
-        width: 100%;
-        gap: 100px;
-    }
 }
 
 .getincontact-left-container {
@@ -99,10 +93,6 @@
     }
 
     @media (min-width: 651px) and (max-width: 1000px) {
-        width: 100%;
-    }
-
-    @media (min-width: 1001px) and (max-width: 1350px) {
         width: 100%;
     }
 }
