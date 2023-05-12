@@ -308,6 +308,10 @@
     justify-content: flex-end;
     padding-top: 150px;
     padding-bottom: 100px;
+
+    @media (min-width: 651px) and (max-width: 1000px) {
+        padding-right: 40px;
+    }
 }
 
 .circle {

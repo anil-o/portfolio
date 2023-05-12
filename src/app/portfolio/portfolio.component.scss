@@ -14,7 +14,7 @@
 .shadow-green {
     position: absolute;
     right: 0;
-    top: -35%;
+    top: 0;
 
     @media (max-width: 450px) {
         top: 0;
@@ -36,7 +36,7 @@
 .shadow-lightblue {
     position: absolute;
     left: 0;
-    bottom: -30%;
+    bottom: -10%;
 
     @media (max-width: 450px) {
         bottom: -10%;
@@ -114,6 +114,8 @@
     margin-top: 35px;
     margin-left: 110px;
     font-weight: 400;
+    font-size: 120%;
+    line-height: 120%;
     margin-bottom: 100px;
 
     @media (max-width: 450px) {
@@ -262,7 +264,7 @@
 .link {
     position: absolute;
     top: 20%;
-    left: 30%;
+    left: 25%;
     display: flex;
 
 
@@ -363,7 +365,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 380px;
+    height: 350px;
     width: 100%;
     background-color: white;
     border-radius: 30px 30px 30px 30px;
