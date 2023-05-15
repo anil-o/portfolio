@@ -33,7 +33,7 @@
     @media (min-width: 451px) and (max-width: 650px) {
         font-size: 45px;
     }
-    
+
     @media (min-width: 651px) and (max-width: 1000px) {
         font-size: 70px;
     }
@@ -181,7 +181,7 @@
     @media (min-width: 651px) and (max-width: 1000px) {
         margin-left: 42px;
     }
-    
+
     @media (min-width: 1001px) and (max-width: 1350px) {
         margin-left: 42px;
     }
@@ -198,7 +198,7 @@
     @media (max-width: 450px) {
         margin-left: 10px;
         margin-right: 10px;
-        width: 95%;
+        width: 83%;
     }
 
     @media (min-width: 451px) and (max-width: 650px) {
@@ -338,6 +338,55 @@
 
     @media (min-width: 451px) and (max-width: 650px) {
         margin-right: 30px;
+    }
+}
+
+.message-successfull {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    z-index: 10000000;
+    box-sizing: border-box;
+    padding: 15px 70px;
+    background-color: #4B47FF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 24px;
+    width: 450px;
+    animation: succesfull 1s ease forwards;
+
+    @media (max-width: 450px) {
+        top: 20%;
+        right: 0;
+    }
+
+    @media (min-width: 451px) and (max-width: 650px){
+        top: 20%;
+        right: 5%;
+    }
+
+    @media (min-width: 651px) and (max-width: 1000px){
+        top: 20%;
+        right: 5%;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px){
+        top: 10%;
+        right: 5%;
+    }
+}
+
+@keyframes successfull {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
     }
 }
 

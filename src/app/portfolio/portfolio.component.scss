@@ -150,21 +150,29 @@
     @media (max-width: 450px) {
         padding-left: 25px;
         padding-right: 25px;
+        justify-content: center;
+        align-items: center;
     }
 
     @media (min-width: 451px) and (max-width: 650px) {
         padding-left: 25px;
         padding-right: 25px;
+        justify-content: center;
+        align-items: center;
     }
 
     @media (min-width: 651px) and (max-width: 1000px) {
         padding-left: 43px;
         padding-right: 43px;
+        justify-content: center;
+        align-items: center;
     }
 
     @media (min-width: 1001px) and (max-width: 1350px) {
         padding-left: 43px;
         padding-right: 43px;
+        justify-content: center;
+        align-items: center;
     }
 }
 

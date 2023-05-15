@@ -1,15 +1,25 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  // ...
+} from '@angular/animations';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit{
 @ViewChild('myForm') myForm: ElementRef
 @ViewChild('name') name: ElementRef
 @ViewChild('message') email: ElementRef
 @ViewChild('sendMessage') message: ElementRef
+
+animation = false;
 
 ngOnInit(): void {
   
@@ -21,15 +31,12 @@ async sendMail() {
   let email = this.email.nativeElement;
   let message = this.message.nativeElement;
   let myForm = this.myForm.nativeElement;
-  name.disabled = true;
-  email.disabled = true;
-  message.disabled = true;
 
   let formData = new FormData();
   formData.append('name', name.value);
   formData.append('email', email.value);
   formData.append('message', message.value);
-
+  
   //send 
   await fetch('https://anil-orhan.developerakademie.net/send_mail/send_mail.php',
   {
@@ -37,15 +44,21 @@ async sendMail() {
     body: formData
   }
   );
-
-  this.emailsent(name, email, message, myForm);
-
-}
-
-emailsent(name, email, message, myForm) {
-  myForm.reset();
   name.disabled = true;
   email.disabled = true;
   message.disabled = true;
+  this.emailsent(name, email, message, myForm);
+}
+
+emailsent(name, email, message, myForm) {
+  this.animation = true;
+  myForm.reset();
+  name.disabled = false;
+  email.disabled = false;
+  message.disabled = false;
+
+  setTimeout(() => {
+    this.animation = false;
+  }, 2000);
 }
 }
