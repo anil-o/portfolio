@@ -11,15 +11,19 @@
     z-index: -1000;
 
     @media (max-width: 450px) {
-        top: -107%;
+        top: -160%;
     }
 
     @media (min-width: 451px) and (max-width: 650px) {
-        top: -135%;
+        top: -130%;
     }
 
     @media (min-width: 651px) and (max-width: 1000px) {
-        top: -95%;
+        top: -115%;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1350px) {
+        top: -115%;
     }
 }
 

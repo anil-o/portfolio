@@ -16,12 +16,13 @@
         </div>
 
         <div class="getincontact-right-container">
-            <form (submit)="sendMail()" ngNativeValidate #myForm class="form-container">
-                <input type="text" placeholder="Your name" #name required>
-                <input type="email" placeholder="Your email" #email required>
-                <textarea class="textarea-box" name="textarea" cols="30" rows="30" placeholder="Your message"
-                    #message required></textarea>
-                <div class="sendmessage-container"><button class="sendmessage" #sendMessage>Send message :)</button></div>
+            <form (ngSubmit)="sendMail()" ngNativeValidate #contact [formGroup]="contactForm" class="form-container">
+                <input type="text" name="name" placeholder="Your name" [(ngModel)]="name" formControlName="name" required>
+                <input type="email" name="email" placeholder="Your email" [(ngModel)]="email" formControlName="email" required>
+                <textarea message="message" class="textarea-box" name="textarea" cols="30" rows="30"
+                    placeholder="Your message" [(ngModel)]="message" formControlName="message" required></textarea>
+                <div class="sendmessage-container"><button class="sendmessage">Send
+                        message :)</button></div>
             </form>
             <div class="circle-container">
                 <div class="circle"><a href="#home"><img class="arrow" src="assets/img/arrow.png"></a></div>
